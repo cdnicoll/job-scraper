@@ -9,6 +9,7 @@ from google import genai
 from google.genai import types
 from typing import List, Optional
 import models
+import config
 
 
 def parse_resume_with_ai(client: genai.Client, resume_text):
@@ -30,7 +31,7 @@ def parse_resume_with_ai(client: genai.Client, resume_text):
     """
 
     response = client.models.generate_content(
-        model="gemini-2.0-flash", 
+        model=config.GEMINI_MODEL_NAME,
         contents=prompt, 
         config=types.GenerateContentConfig(
             response_mime_type='application/json',
