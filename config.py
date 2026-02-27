@@ -56,6 +56,7 @@ LINKEDIN_LOCATION = "Vancouver, BC"  # Update to your target location
 LINKEDIN_GEO_ID = 101174742  # Canada — update if targeting a specific city
 LINKEDIN_JOB_TYPE = "F"  # Full-time
 LINKEDIN_JOB_POSTING_DATE = "r604800"  # Past week
+LINKEDIN_F_WT = "3,2"  # Work type: 3=Hybrid, 2=Remote, 1=Onsite
 
 # --- Careers Future Search Configuration ---
 CAREERS_FUTURE_SEARCH_QUERIES = [
